@@ -245,7 +245,7 @@ class Users extends AbstractApi
     {
         return $this->post(‘users/‘. $this->encodePath($user_id).‘/impersonation_tokens’, array(
             ‘name’    => $my_token,
-            ‘scopes[]’  => ‘api’
+            "scopes[]"  => ‘api’
         ));
     }
 }
